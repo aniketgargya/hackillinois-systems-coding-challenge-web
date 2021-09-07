@@ -1,0 +1,26 @@
+{
+  "name": "hackillinois-systems-coding-challenge-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "serve out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniketgargya/hackIllinois-systems-coding-challenge-web.git"
+  },
+  "keywords": [],
+  "author": "Aniket Gargya <gargya.aniket@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniketgargya/hackIllinois-systems-coding-challenge-web/issues"
+  },
+  "homepage": "https://github.com/aniketgargya/hackIllinois-systems-coding-challenge-web#readme",
+  "dependencies": {
+    "next": "^11.1.2",
+    "serve": "^12.0.0"
+  }
+}
