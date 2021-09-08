@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Profile from "../components/profile";
 
 // Returns a tuple with either the first value containing the error and the second value containing the response, exactly one will be null
 const fetchMentors = async () => {
@@ -32,10 +33,12 @@ const Mentors = () => {
 
     return (
         <>
-            <h1>Hack Illinois</h1>
+            <h1>Meet Our <span className="highlight">Hack Illinois</span> Mentors</h1>
             {fetchStatus.loading && <p>Loading...</p>}
             {!fetchStatus.loading && fetchStatus.err && <p>{fetchStatus.err.toString()}</p>}
-            {!fetchStatus.loading && fetchStatus.data && <pre>{JSON.stringify(fetchStatus.data, null, 4)}</pre>}
+            {!fetchStatus.loading && fetchStatus.data && fetchStatus.data.map(({ profile, firstName, lastName, description }, i) => (
+                <Profile key={i} profile={profile} name={`${firstName} ${lastName}`} description={description} />
+            ))}
         </>
     );
 };

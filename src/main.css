@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to left, #1b2941, #061b34);
+}
+
+.highlight {
+    font-size: inherit;
+    color:#FF552E;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.profile {
+    margin: 50px auto;
+    padding: 40px 40px;
+    width: 65%;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+    background: rgb(19,41,75);
+    background: linear-gradient(to left, #f83600, #ff623e);
+}
+
+.profile:nth-child(even) {
+    flex-direction: row;
+    background: linear-gradient(to right, #f83600, #ff623e);
+}
+
+.profile .name {
+    margin-bottom: 20px;
+}
+
+.profile .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: top;
+    background-size: cover;
+
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.profile:nth-child(odd) .profile-picture {
+    margin-right: 60px;
+}
+
+.profile:nth-child(even) .profile-picture {
+    margin-left: 60px;
+}
