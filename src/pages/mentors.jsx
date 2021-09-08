@@ -33,7 +33,7 @@ const Mentors = () => {
 
     return (
         <>
-            <h1>Meet Our <span className="highlight">Hack Illinois</span> Mentors</h1>
+            <h1>Meet Our <span className="highlight">Hack&nbsp;Illinois</span> Mentors</h1>
             {fetchStatus.loading && <p>Loading...</p>}
             {!fetchStatus.loading && fetchStatus.err && <p>{fetchStatus.err.toString()}</p>}
             {!fetchStatus.loading && fetchStatus.data && fetchStatus.data.map(({ profile, firstName, lastName, description }, i) => (
