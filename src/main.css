@@ -146,6 +146,10 @@ p {
         max-width: 900px;
     }
 
+    .profile .description {
+        margin-bottom: 20px;
+    }
+
     .profile .profile-picture {
         margin-bottom: 0;
     }
