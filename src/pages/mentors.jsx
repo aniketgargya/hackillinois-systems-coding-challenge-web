@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchMentors, validateMentorsResponse } from "../functions";
 import Profile from "../components/profile";
+import Loader from "../components/loader";
 
 const Mentors = () => {
     const [fetchStatus, setFetchStatus] = useState({ loading: true, err: null, data: null });
@@ -19,8 +20,8 @@ const Mentors = () => {
     return (
         <>
             <h1>Meet Our <span className="highlight">Hack&nbsp;Illinois</span> Mentors</h1>
-            {fetchStatus.loading && <p>Loading...</p>}
-            {!fetchStatus.loading && fetchStatus.err && <p>{fetchStatus.err.toString()}</p>}
+            {fetchStatus.loading && <Loader />}
+            {!fetchStatus.loading && fetchStatus.err && <div className="info">{fetchStatus.err.toString()}</div>}
             {!fetchStatus.loading && fetchStatus.data && fetchStatus.data.map(({ profile, firstName, lastName, description }, i) => (
                 <Profile key={i} profile={profile} name={`${firstName} ${lastName}`} description={description} />
             ))}

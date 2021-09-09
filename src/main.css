@@ -11,6 +11,16 @@ body {
     background-image: linear-gradient(to left, #1b2941, #061b34);
 }
 
+.info {
+    font-weight: 700;
+    font-size: 20px;
+    width: 80%;
+    padding: 20px;
+    color: #FF552E;
+    border: 3px solid currentColor;
+    margin: 20px auto;
+}
+
 .highlight {
     font-size: inherit;
     color:#FF552E;
