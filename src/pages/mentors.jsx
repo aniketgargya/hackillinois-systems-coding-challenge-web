@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchMentors, validateMentorsResponse } from "../functions";
 import Profile from "../components/profile";
 import Loader from "../components/loader";
+import Head from "next/head";
 
 const Mentors = () => {
     const [fetchStatus, setFetchStatus] = useState({ loading: true, err: null, data: null });
@@ -19,6 +20,11 @@ const Mentors = () => {
 
     return (
         <>
+            <Head>
+                <title>HackIllinois | Mentors</title>
+                <meta name="description" content="The mentors of HackIllinois." />
+            </Head>
+
             <h1>Meet Our <span className="highlight">Hack&nbsp;Illinois</span> Mentors</h1>
             {fetchStatus.loading && <Loader />}
             {!fetchStatus.loading && fetchStatus.err && <div className="info">{fetchStatus.err.toString()}</div>}
