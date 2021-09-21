@@ -67,6 +67,7 @@ p {
     border-radius: 50%;
     background-position: top;
     background-size: cover;
+    background-color: black;
 
     flex-shrink: 0;
     flex-grow: 0;
@@ -95,8 +96,8 @@ p {
 }
 
 .profile .email {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     fill: white;
 }
 
