@@ -25,7 +25,7 @@ const Mentors = () => {
                 <meta name="description" content="The mentors of HackIllinois." />
             </Head>
 
-            <h1>Meet Our <span className="highlight">Hack&nbsp;Illinois</span> Mentors</h1>
+            <h1>A <span className="highlight">Toast</span> to Our {/* <span className="highlight">Hack&nbsp;Illinois</span> */} Mentors</h1>
             {fetchStatus.loading && <Loader />}
             {!fetchStatus.loading && fetchStatus.err && <div className="info">{fetchStatus.err.toString()}</div>}
             {!fetchStatus.loading && fetchStatus.data && fetchStatus.data.map(({ profile, firstName, lastName, description }, i) => (
