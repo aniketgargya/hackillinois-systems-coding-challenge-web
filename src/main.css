@@ -10,6 +10,10 @@
 body {
     color: #636363;
     background-color: rgb(246, 244, 214);
+    position: relative;
+    padding: 50px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.50)), url("/background.png");
+    background-size: 175px;
 }
 
 .info {
@@ -17,21 +21,22 @@ body {
     font-size: 20px;
     width: 80%;
     padding: 20px;
-    border: 3px solid currentColor;
     margin: 20px auto;
+    background-color: #a5efff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .highlight {
     font-size: inherit;
     color:rgb(255, 129, 150);
-    font-weight: 400;
 }
 
 h1 {
     font-size: 40px;
-    margin: 30px;
+    margin: 0 30px 30px 30px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
+    background-image: radial-gradient(white, rgba(255, 255, 255, 0));
 }
 
 h2 {
@@ -53,8 +58,11 @@ p {
     background: repeating-linear-gradient(90deg, white, white 15px, rgb(255, 159, 175) 15px, rgb(255, 159, 175) 30px);
 }
 
+.profile:last-of-type {
+    margin-bottom: 0;
+}
+
 .profile .profile-content {
-    /* color: white; */
     padding: 25px 25px;
     min-height: 375px;
     background-color: #a5efff;
@@ -134,7 +142,6 @@ p {
     }
 
     .profile {
-        margin: 50px auto;
         padding: 30px 30px;
         width: 65%;
         max-width: 500px;
