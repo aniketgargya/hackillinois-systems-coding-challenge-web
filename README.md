@@ -35,5 +35,8 @@ npm run build
 ```
 
 - Serve the files with the npm `serve` package or simply open the pages from the `out/` directory
+```bash
+npm start
+```
 
 ## Screenshots
