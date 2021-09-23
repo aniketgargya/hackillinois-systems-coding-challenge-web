@@ -11,7 +11,7 @@ body {
     color: #636363;
     background-color: rgb(246, 244, 214);
     position: relative;
-    padding: 50px;
+    padding: 25px;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.50)), url("/background.png");
     background-size: 175px;
 }
@@ -52,7 +52,7 @@ p {
 .profile {
     margin: 50px auto;
     padding: 15px 0;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     background: repeating-linear-gradient(90deg, white, white 15px, rgb(255, 159, 175) 15px, rgb(255, 159, 175) 30px);
@@ -116,10 +116,15 @@ p {
     fill: currentColor;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 435px) {
+    body {
+        padding: 50;
+    }
+
     .profile {
         padding: 25px 25px;
         max-width: 400px;
+        width: 80%;
     }
 
     .profile .profile-content {
@@ -144,24 +149,9 @@ p {
     .profile {
         padding: 30px 30px;
         width: 65%;
-        max-width: 500px;
+        max-width: 900px;
 
         justify-content: space-between;
-    }
-
-    .profile .profile-picture {
-        width: 200px;
-        height: 200px;
-    }
-
-    .profile .name {
-        margin-bottom: 20px;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    .profile {
-        max-width: 900px;
     }
 
     .profile .profile-content {
@@ -176,6 +166,8 @@ p {
 
     .profile .profile-picture {
         margin-bottom: 0;
+        width: 200px;
+        height: 200px;
     }
 
     .profile:nth-child(odd) .profile-content {
