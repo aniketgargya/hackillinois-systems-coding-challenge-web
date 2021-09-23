@@ -40,3 +40,15 @@ npm start
 ```
 
 ## Screenshots
+
+<img alt="375x812 Screenshot" src="README/screenshots/375x812.png" width="33%">
+
+375x812 Screenshot
+
+<img alt="1024x1633 Screenshot" src="README/screenshots/1024x1366.png" width="66%">
+
+1024x1633 Screenshot
+
+<img alt="1920x1080 Screenshot" src="README/screenshots/1920x1080.png">
+
+1920x1080 Screenshot
