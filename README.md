@@ -1,5 +1,7 @@
 # HackIllinois Web Systems Coding Challenge
 
+Live at [https://hackillinois-systems-coding-challenge-web.vercel.app/mentors](https://hackillinois-systems-coding-challenge-web.vercel.app/mentors).
+
 Built with React and Next.js.
 
 This is the webpage I created for my application for the HackIllinois Systems Team.
