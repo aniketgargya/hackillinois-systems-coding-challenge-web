@@ -1,5 +1,5 @@
 import Head from "next/head";
-import "../main.css";
+import "../styles/main.scss";
 
 const App = ({ Component, pageProps }) => (
     <>
